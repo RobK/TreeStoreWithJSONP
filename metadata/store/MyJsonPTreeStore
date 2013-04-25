@@ -1,0 +1,85 @@
+{
+    "type": "jsonptreestore",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userClassName": "MyJsonPTreeStore",
+        "autoLoad": true,
+        "storeId": "MyJsonPTreeStore"
+    },
+    "id": "ExtBox1-ext-gen1935",
+    "designerId": "e54ed6aa-ac80-4a35-9c98-3d607c136894",
+    "cn": [
+        {
+            "type": "jsonpproxy",
+            "reference": {
+                "name": "proxy",
+                "type": "object"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "MyJsonPProxy",
+                "url": "http://grottaglie24.it/rss/ultime.php?callback=callback1",
+                "callbackKey": "callback1"
+            },
+            "designerId": "9066035f-66ab-456d-a98f-5e22c1f36326",
+            "cn": [
+                {
+                    "type": "jsonreader",
+                    "reference": {
+                        "name": "reader",
+                        "type": "object"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "designer|userClassName": "MyJsonReader",
+                        "root": "items"
+                    },
+                    "designerId": "1f2d036a-f591-4bb1-81d0-86e3e90dfd06"
+                }
+            ]
+        },
+        {
+            "type": "datafield",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "field",
+                "name": "category"
+            },
+            "designerId": "d3d158cf-aaa2-4eb6-b3b0-65ac0bf7887a"
+        },
+        {
+            "type": "datafield",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "field1",
+                "name": "data"
+            },
+            "designerId": "eb9cda03-7b2b-46e4-904a-470ecaa086a4"
+        },
+        {
+            "type": "datafield",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "field2",
+                "name": "info"
+            },
+            "designerId": "474f7d5c-d471-43cd-be91-ae176e818808"
+        }
+    ]
+}

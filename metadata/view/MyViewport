@@ -1,0 +1,113 @@
+{
+    "type": "viewport",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userClassName": "MyViewport",
+        "designer|initialView": true,
+        "layout": "border"
+    },
+    "id": "ExtBox1-ext-gen3283",
+    "designerId": "efda0734-6cbf-476f-9384-b26f1b12eab3",
+    "cn": [
+        {
+            "type": "panel",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "layout|region": "center",
+                "designer|userClassName": "MyPanel",
+                "id": "myPanel",
+                "title": "My Panel"
+            },
+            "designerId": "4b6f7eed-4c69-4d7a-a8f7-2b7f26dbb5c4"
+        },
+        {
+            "type": "treepanel",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "layout|region": "west",
+                "designer|userClassName": "TreeGrid",
+                "width": 269,
+                "title": "My Tree Grid Panel",
+                "store": "MyJsonPTreeStore"
+            },
+            "designerId": "2804f9f5-2417-424e-93e2-3c317e24398f",
+            "iconCls": "icon-treegridpanel",
+            "cn": [
+                {
+                    "type": "treeview",
+                    "reference": {
+                        "name": "viewConfig",
+                        "type": "object"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "designer|userClassName": "MyTreeView",
+                        "rootVisible": false
+                    },
+                    "designerId": "7828e231-35cb-4f88-9c75-a8f4d148e883"
+                },
+                {
+                    "type": "treecolumn",
+                    "reference": {
+                        "name": "columns",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "designer|userClassName": "MyTreeColumn",
+                        "dataIndex": "category",
+                        "flex": 1,
+                        "text": "Nodes"
+                    },
+                    "designerId": "6325c15d-1452-432f-adde-71129a85e576"
+                },
+                {
+                    "type": "gridcolumn",
+                    "reference": {
+                        "name": "columns",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "designer|userClassName": "MyColumn",
+                        "dataIndex": "data",
+                        "text": "Value"
+                    },
+                    "designerId": "5789488c-bfc8-469d-a757-e1f3b99783e3"
+                },
+                {
+                    "type": "basiceventbinding",
+                    "reference": {
+                        "name": "listeners",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "designer|userClassName": "onTreepanelSelect",
+                        "fn": "onTreepanelSelect",
+                        "implHandler": [
+                            "\r",
+                            "Ext.getCmp('myPanel').update(record.get('info'));\r",
+                            "                       "
+                        ],
+                        "name": "select",
+                        "scope": "me"
+                    },
+                    "designerId": "752b299e-f8e0-4887-826e-77f8c1e3a50e"
+                }
+            ]
+        }
+    ]
+}

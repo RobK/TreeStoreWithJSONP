@@ -1,0 +1,58 @@
+{
+    "name": "TreeStoreWithJSONP",
+    "settings": {
+        "urlPrefix": "http://localhost/TreeStoreWithJSONP/",
+        "spacesToIndent": 4,
+        "exportPath": "",
+        "sdkPath": "",
+        "lineEnding": "CRLF",
+        "genTimestamps": false,
+        "cacheBust": false
+    },
+    "xdsVersion": "2.1.0",
+    "xdsBuild": 678,
+    "schemaVersion": 1,
+    "upgradeVersion": 210000000498,
+    "framework": "ext41",
+    "topInstanceFileMap": {
+        "e54ed6aa-ac80-4a35-9c98-3d607c136894": {
+            "paths": [
+                "metadata/store/MyJsonPTreeStore",
+                "app/store/override/MyJsonPTreeStore.js",
+                "app/store/MyJsonPTreeStore.js"
+            ],
+            "className": "MyJsonPTreeStore"
+        },
+        "a35b1d0e-0415-4ab4-b33b-9fe2cb1d8122": {
+            "paths": [
+                "metadata/resource/Library"
+            ],
+            "className": "Library"
+        },
+        "efda0734-6cbf-476f-9384-b26f1b12eab3": {
+            "paths": [
+                "metadata/view/MyViewport",
+                "app/view/override/MyViewport.js",
+                "app/view/MyViewport.js",
+                "app/view/Viewport.js"
+            ],
+            "className": "MyViewport"
+        }
+    },
+    "viewOrderMap": {
+        "view": [
+            "efda0734-6cbf-476f-9384-b26f1b12eab3"
+        ],
+        "store": [
+            "e54ed6aa-ac80-4a35-9c98-3d607c136894"
+        ],
+        "controller": [],
+        "model": [],
+        "resource": [
+            "a35b1d0e-0415-4ab4-b33b-9fe2cb1d8122"
+        ],
+        "app": [
+            "application"
+        ]
+    }
+}
